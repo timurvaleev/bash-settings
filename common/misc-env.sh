@@ -8,6 +8,6 @@ export RUBY_GC_MALLOC_LIMIT=59000000
 export RUBY_HEAP_FREE_MIN=100000
 
 export GREP_OPTIONS='--color=auto'
-export LS_OPTIONS=' -G'
+export LS_OPTIONS=' --color -G'
 
 alias f5='source ~/.bash_login'
