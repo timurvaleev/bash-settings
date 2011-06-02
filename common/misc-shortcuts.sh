@@ -14,8 +14,12 @@ alias zxvf="tar zxvf "
 alias g?="grep \$1"
 alias rake?="rake -T | g? \$1"
 alias gem?="gem list | g? \$1"
+alias ps?="ps aux | g? \$1"
 
 alias mgem="cd \$GEMS; mate \$1"
 
 alias sgi32="env ARCHFLAGS=\"-Os -arch i386 -fno-common\" gem install --no-ri --no-rdoc"
 alias sgi64="env ARCHFLAGS=\"-Os -arch x86_64 -fno-common\" gem install --no-ri --no-rdoc"
+
+alias rpf="time rake parallel:features[4]"
+alias slr="RAILS_ENV=test rake sunspot:solr:start"
